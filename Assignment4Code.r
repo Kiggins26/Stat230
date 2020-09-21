@@ -1,0 +1,32 @@
+MPG_Data <- c(41.5,50.7,36.6,37.3,34.2,45.0,48.0,43.2,47.7,42.2,43.2,44.6,48.4,46.4,46.8,39.2,37.3,43.5,44.3,43.3)
+hist(MPG_Data)
+mean(MPG_Data)
+sd(MPG_Data)
+Jocko <- c(500,1550,1250,1300,750,1000,1210,1300,800,2500)
+Trusted <- c(430,1500,1300,1280,780,870,1120,1140,650,2290)
+mean(Jocko)
+sd(Jocko)
+diff <- Jocko - Trusted
+diffsquare <- diff * diff
+sum(diffsquare)
+thesum <- sum(diffsquare)
+sig = sqrt(thesum)/9
+ClassData <- read.csv("ClassData.csv", header=T)
+hist(Phone1)
+hist(Phone2)
+hist(Phone1-Phone2)
+qqnorm(Phone1)
+qqline(Phone1)
+qqnorm(Phone2)
+qqline(Phone2)
+qqnorm(Phone1-Phone2)
+qqline(Phone1-Phone2)
+mean(Phone1, na.rm = TRUE)
+sd(Phone1, na.rm = TRUE)
+mean(Phone2, na.rm = TRUE)
+sd(Phone2, na.rm = TRUE)
+summary(Phone1,na.r = TRUE)
+summary(Phone2,na.r = TRUE)
+t.test(Phone1,Phone2)
+
+
